@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.title {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+div.title div.blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+div.title img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid pink;
+    border-top-left-radius: 25%; 
+    border-bottom-right-radius: 25%;
+    pointer-events: none;
+}
+
+div.title div.cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.title h1 {
+    font-family: 'Comic Sans MS';
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 72px;
+    color: white;
+    text-shadow: 0 0 30px rgb(143, 4, 131), 0 0 30px rgb(143, 4, 131), 0 0 30px rgb(143, 4, 131);
+}
+
+div.title h3 {
+    font-family: 'Comic Sans MS';
+    font-weight: 900;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 30px rgb(143, 4, 131), 0 0 30px rgb(143, 4, 131), 0 0 30px rgb(143, 4, 131);
+}
+
+div.title a {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Comic Sans MS';
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(#a5a5a5, white);
+    width: 250px;
+    padding: 20px 0;
+    color: #222;
+    text-decoration: none;
+    box-shadow: 0 0 0 2px white, 0 0 0 6px black;
+    transition: .25s;
+}
+     
+
+div.title a:hover {
+    color: #ddd;
+    background-image: linear-gradient(#868686, black);
+    box-shadow: 0 0 0 6px rgb(0, 0, 0), 0 0 0 11px rgb(255, 255, 255);
+    border-radius: 2px;
+    transform: scale(1.025);
+
+}
+
+/* ROASTER SECTION */
+
+
+
+
+
+div.roaster {
+    width: 100%;
+    background-image: url(bgc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+div.roaster h2.center {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: white;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black;
+    
+}
+
+div.site {
+    max-width: 1080px;
+    min-height: 1000px;
+    margin: 0 auto 0 auto;
+    font-family: 'Comic Sans MS';
+    padding-bottom: 100px;
+}
+
+div.player-table {
+    margin: 0 auto 0 auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+div.player-table:nth-of-type(odd) {
+    flex-direction: row;
+}
+
+div.player-table:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+div.player-opis {
+    
+    padding: 20px 15px;
+    width: 66%;
+    background-color: #ffb7c4;
+    border: 5px solid #f66386;
+    border-top-left-radius: 25px; 
+    border-bottom-right-radius: 25px;
+    
+}
+
+div.player-table:nth-of-type(odd) div.player-opis {
+    margin: 0 auto 0 90px;
+}
+
+div.player-table:nth-of-type(even) div.player-opis {
+    margin: 0 90px 0 auto;
+}
+
+
+div.player-table img {
+    width: 33%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #f66386;
+}
+
+div.player-opis h2 {
+    transform-origin: left;
+    transition: 0.4s;
+}
+
+div.player-opis:hover h2 {
+    transform: scale(1.1);  
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px #992e47;
+}
+
+div#maskotka {
+    position: relative;
+}
+
+div.player-table img.maskotka {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border-radius: none;
+    box-shadow: none;
+    object-fit: contain;
+}
+
+h3.break { 
+    margin-top: 15px;
+}
+
+
+
