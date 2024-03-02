@@ -245,7 +245,7 @@ h3.break {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     div.title img {
         width: 350px;
     }
