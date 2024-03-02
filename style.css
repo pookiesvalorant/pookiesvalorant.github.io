@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,6 +12,7 @@ div.title {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
 
@@ -96,6 +97,7 @@ div.roaster {
     background-image: url(bgc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -189,5 +191,99 @@ h3.break {
     margin-top: 15px;
 }
 
+@media (max-width: 1024px) {
+
+    div.player-table:nth-of-type(odd) div.player-opis {
+        margin: 0 30px 0 90px;
+    }
+    
+    div.player-table:nth-of-type(even) div.player-opis {
+        margin: 0 90px 0 30px;
+    }
+
+    div.player-table:nth-of-type(odd) img {
+        margin-left: 30px;
+    }
+
+    div.player-table:nth-of-type(even) img {
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    div.title h1 {
+        text-align: center;
+        font-size: 48px;
+    }
+    
+    div.title h3 {
+        padding-top: 5px;
+        font-size: 16px;
+    }
+    
+    div.title a {
+        margin-top: 20px;
+        width: 160px;
+        padding: 10px 0;
+        box-shadow: 0 0 0 1px white, 0 0 0 4px black;
+        font-size: 12px;
+    }
+         
+    
+    div.title a:hover {
+        color: #ddd;
+        background-image: linear-gradient(#868686, black);
+        box-shadow: 0 0 0 6px rgb(0, 0, 0), 0 0 0 11px rgb(255, 255, 255);
+        border-radius: 2px;
+        transform: scale(1.025);
+    
+    }
+
+    div.title img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    div.title img {
+        width: 350px;
+    }
+
+    div.roaster h2.center {
+        font-size: 1.7rem;
+        
+    }
+
+    div.player-table:nth-of-type(odd) {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    div.player-table:nth-of-type(even) {
+        flex-direction: column;
+        margin: 0;
+    }
 
 
+    div.player-table:nth-of-type(odd) div.player-opis {
+        margin: 0 0 35px 0;
+        text-align: center;
+    }
+    
+    div.player-table:nth-of-type(even) div.player-opis {
+        margin: 0 0 35px 0;
+        text-align: center;
+    }
+
+
+    div.player-table:nth-of-type(odd) img {
+        margin: 0 0 20px 0;
+        width: 70%;
+    }
+
+    div.player-table:nth-of-type(even) img {
+        margin: 0 0 20px 0;
+        width: 70%;
+    }
+}
