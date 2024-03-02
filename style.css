@@ -286,4 +286,8 @@ h3.break {
         margin: 0 0 20px 0;
         width: 70%;
     }
+
+    div.player-table img.maskotka {
+        visibility: hidden;
+    }
 }
